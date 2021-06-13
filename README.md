@@ -1,14 +1,14 @@
 # SwaggerExample    
-##Author    
+## Author    
 Dennis Kingsman    
-##Pom configuration    
-###Database    
+## Pom configuration    
+### Database    
 oracle in docker container    
-###ORM    
+### ORM    
 Spring JDBC    
-###Testing    
+### Testing    
 Junit 5 jupiter    
-###Liquibase    
+### Liquibase    
 :white_check_mark: enabled    
-###lombok    
+### Lombok    
 :white_check_mark: enabled  
