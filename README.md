@@ -12,3 +12,5 @@ Junit 5 jupiter
 :white_check_mark: enabled    
 ### Lombok    
 :white_check_mark: enabled  
+## Swagger client
+use swagger editor with api-docs.json
