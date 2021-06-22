@@ -5,6 +5,7 @@ import com.nf.swagger.service.DocService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 @RestController
@@ -16,6 +17,13 @@ public class DocController {
     @Autowired
     public void setDocService(DocService docService) {
         this.docService = docService;
+    }
+
+    @GetMapping("/call/{id}")
+    public Doc restCall(@PathVariable("id") Long id) {
+        RestTemplate restTemplate = new RestTemplate();
+        String callUrl = "http://localhost:8080/document/get/" + id;
+        return restTemplate.getForObject(callUrl, Doc.class);
     }
 
     @GetMapping(path = "/get/{id}")
