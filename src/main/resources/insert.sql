@@ -1,0 +1,1 @@
+INSERT INTO T_DOCS(doc_title, doc_author, doc_text) VALUES ('test1', 'test2', 'test3');
